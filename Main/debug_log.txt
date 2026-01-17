@@ -1,0 +1,132 @@
+2026-01-17 21:20:49.442567: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-17 21:20:51.115261: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[2026-01-17 21:20:54,665] INFO: Downloading historical data...
+[                       0%                       ][****************      33%                       ]  2 of 6 completed[**********************50%                       ]  3 of 6 completed[**********************67%*******                ]  4 of 6 completed[**********************83%***************        ]  5 of 6 completed[*********************100%***********************]  6 of 6 completed
+[2026-01-17 21:20:55,657] INFO: Data shape: (3763, 6)
+[2026-01-17 21:20:55,666] INFO: Data head:
+Ticker          BRK-B          C          GS        JPM      NVDA       ^VIX
+Date                                                                        
+2010-01-04  66.220001  25.228098  130.641541  28.423925  0.423807  20.040001
+2010-01-05  66.540001  26.192698  132.951233  28.974495  0.429995  19.350000
+2010-01-06  66.199997  27.008904  131.532227  29.133699  0.432746  19.160000
+2010-01-07  66.459999  27.083099  134.106094  29.710802  0.424265  19.059999
+2010-01-08  66.440002  26.637905  131.569916  29.637825  0.425182  18.129999
+[2026-01-17 21:20:55,666] INFO: Calculating returns and scaling...
+[2026-01-17 21:20:55,670] INFO: Returns shape: (3762, 6)
+[2026-01-17 21:20:55,673] INFO: Fitting HMM to identify market regimes...
+Using cpu device
+[2026-01-17 21:20:59,520] INFO: Training the PPO model...
+-----------------------------
+| time/              |      |
+|    fps             | 542  |
+|    iterations      | 1    |
+|    time_elapsed    | 3    |
+|    total_timesteps | 2048 |
+-----------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 518           |
+|    iterations           | 2             |
+|    time_elapsed         | 7             |
+|    total_timesteps      | 4096          |
+| train/                  |               |
+|    approx_kl            | 6.3452375e-05 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -1.29         |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.00517      |
+|    n_updates            | 10            |
+|    policy_gradient_loss | -0.00032      |
+|    std                  | 1             |
+|    value_loss           | 0.0173        |
+-------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 504          |
+|    iterations           | 3            |
+|    time_elapsed         | 12           |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 7.359465e-05 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -8.52        |
+|    explained_variance   | -0.617       |
+|    learning_rate        | 1e-05        |
+|    loss                 | -0.00313     |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00028     |
+|    std                  | 1            |
+|    value_loss           | 0.0185       |
+------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 507          |
+|    iterations           | 4            |
+|    time_elapsed         | 16           |
+|    total_timesteps      | 8192         |
+| train/                  |              |
+|    approx_kl            | 6.248965e-05 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -8.52        |
+|    explained_variance   | -0.706       |
+|    learning_rate        | 1e-05        |
+|    loss                 | -0.00234     |
+|    n_updates            | 30           |
+|    policy_gradient_loss | -0.000254    |
+|    std                  | 1            |
+|    value_loss           | 0.0154       |
+------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 508           |
+|    iterations           | 5             |
+|    time_elapsed         | 20            |
+|    total_timesteps      | 10240         |
+| train/                  |               |
+|    approx_kl            | 6.6770066e-05 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.52         |
+|    explained_variance   | -1.01         |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.00305      |
+|    n_updates            | 40            |
+|    policy_gradient_loss | -0.000239     |
+|    std                  | 1             |
+|    value_loss           | 0.0108        |
+-------------------------------------------
+Traceback (most recent call last):
+  File "c:\Projects\Regimeaware1\lumina\main.py", line 214, in <module>
+    model.learn(total_timesteps=TRAINING_TIMESTEPS, callback=checkpoint_callback)
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 218, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 222, in step
+    return self.step_wait()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 73, in step_wait
+    return (self._obs_from_buf(), np.copy(self.buf_rews), np.copy(self.buf_dones), deepcopy(self.buf_infos))
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 114, in _obs_from_buf
+    return dict_to_obs(self.observation_space, deepcopy(self.buf_obs))
+                                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\copy.py", line 285, in _reconstruct
+    value = deepcopy(value, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\copy.py", line 128, in deepcopy
+    y = memo.get(d, _nil)
+        ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

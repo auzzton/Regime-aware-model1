@@ -1,0 +1,38 @@
+Downloading data...
+
+--- DATA INFO ---
+Columns: MultiIndex([( 'Close', 'BRK-B'),
+            ( 'Close',     'C'),
+            ( 'Close',    'GS'),
+            ( 'Close',   'JPM'),
+            ( 'Close',  'NVDA'),
+            ( 'Close',  '^VIX'),
+            (  'High', 'BRK-B'),
+            (  'High',     'C'),
+            (  'High',    'GS'),
+            (  'High',   'JPM'),
+            (  'High',  'NVDA'),
+            (  'High',  '^VIX'),
+            (   'Low', 'BRK-B'),
+            (   'Low',     'C'),
+            (   'Low',    'GS'),
+            (   'Low',   'JPM'),
+            (   'Low',  'NVDA'),
+            (   'Low',  '^VIX'),
+            (  'Open', 'BRK-B'),
+            (  'Open',     'C'),
+            (  'Open',    'GS'),
+            (  'Open',   'JPM'),
+            (  'Open',  'NVDA'),
+            (  'Open',  '^VIX'),
+            ('Volume', 'BRK-B'),
+            ('Volume',     'C'),
+            ('Volume',    'GS'),
+            ('Volume',   'JPM'),
+            ('Volume',  'NVDA'),
+            ('Volume',  '^VIX')],
+           names=['Price', 'Ticker'])
+Columns Levels: [['Close', 'High', 'Low', 'Open', 'Volume'], ['BRK-B', 'C', 'GS', 'JPM', 'NVDA', '^VIX']]
+First column: ('Close', 'BRK-B')
+
+Available Level 0 values: Index(['Close', 'High', 'Low', 'Open', 'Volume'], dtype='object', name='Price')

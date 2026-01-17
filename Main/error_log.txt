@@ -1,0 +1,201 @@
+2026-01-17 20:23:51.075413: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-17 20:23:53.730053: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[2026-01-17 20:23:59,800] INFO: Downloading historical data...
+[                       0%                       ][****************      33%                       ]  2 of 6 completed[**********************50%                       ]  3 of 6 completed[**********************67%*******                ]  4 of 6 completed[**********************83%***************        ]  5 of 6 completed[*********************100%***********************]  6 of 6 completed
+[2026-01-17 20:24:07,948] INFO: Calculating returns and scaling...
+[2026-01-17 20:24:07,957] INFO: Fitting HMM to identify market regimes...
+Using cpu device
+[2026-01-17 20:24:13,097] INFO: Training the PPO model...
+-----------------------------
+| time/              |      |
+|    fps             | 487  |
+|    iterations      | 1    |
+|    time_elapsed    | 4    |
+|    total_timesteps | 2048 |
+-----------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 455           |
+|    iterations           | 2             |
+|    time_elapsed         | 8             |
+|    total_timesteps      | 4096          |
+| train/                  |               |
+|    approx_kl            | 9.7469776e-05 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -1.76         |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.00479      |
+|    n_updates            | 10            |
+|    policy_gradient_loss | -0.000352     |
+|    std                  | 1             |
+|    value_loss           | 0.0102        |
+-------------------------------------------
+--------------------------------------------
+| time/                   |                |
+|    fps                  | 427            |
+|    iterations           | 3              |
+|    time_elapsed         | 14             |
+|    total_timesteps      | 6144           |
+| train/                  |                |
+|    approx_kl            | 0.000100388424 |
+|    clip_fraction        | 0              |
+|    clip_range           | 0.2            |
+|    entropy_loss         | -8.51          |
+|    explained_variance   | -0.688         |
+|    learning_rate        | 1e-05          |
+|    loss                 | -0.00321       |
+|    n_updates            | 20             |
+|    policy_gradient_loss | -0.000334      |
+|    std                  | 1              |
+|    value_loss           | 0.012          |
+--------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 418           |
+|    iterations           | 4             |
+|    time_elapsed         | 19            |
+|    total_timesteps      | 8192          |
+| train/                  |               |
+|    approx_kl            | 0.00025123832 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -0.912        |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.0064       |
+|    n_updates            | 30            |
+|    policy_gradient_loss | -0.000802     |
+|    std                  | 1             |
+|    value_loss           | 0.0101        |
+-------------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 416          |
+|    iterations           | 5            |
+|    time_elapsed         | 24           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 8.253113e-05 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -8.51        |
+|    explained_variance   | -0.559       |
+|    learning_rate        | 1e-05        |
+|    loss                 | -0.0048      |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.000293    |
+|    std                  | 1            |
+|    value_loss           | 0.0113       |
+------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 417           |
+|    iterations           | 6             |
+|    time_elapsed         | 29            |
+|    total_timesteps      | 12288         |
+| train/                  |               |
+|    approx_kl            | 0.00035383395 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -0.733        |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.00905      |
+|    n_updates            | 50            |
+|    policy_gradient_loss | -0.00117      |
+|    std                  | 1             |
+|    value_loss           | 0.00835       |
+-------------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 417         |
+|    iterations           | 7           |
+|    time_elapsed         | 34          |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.000219165 |
+|    clip_fraction        | 0           |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -8.51       |
+|    explained_variance   | -0.935      |
+|    learning_rate        | 1e-05       |
+|    loss                 | -0.00665    |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.000745   |
+|    std                  | 1           |
+|    value_loss           | 0.00767     |
+-----------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 419           |
+|    iterations           | 8             |
+|    time_elapsed         | 39            |
+|    total_timesteps      | 16384         |
+| train/                  |               |
+|    approx_kl            | 0.00023576521 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -0.55         |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.00366      |
+|    n_updates            | 70            |
+|    policy_gradient_loss | -0.000721     |
+|    std                  | 1             |
+|    value_loss           | 0.00955       |
+-------------------------------------------
+-------------------------------------------
+| time/                   |               |
+|    fps                  | 418           |
+|    iterations           | 9             |
+|    time_elapsed         | 44            |
+|    total_timesteps      | 18432         |
+| train/                  |               |
+|    approx_kl            | 0.00023342707 |
+|    clip_fraction        | 0             |
+|    clip_range           | 0.2           |
+|    entropy_loss         | -8.51         |
+|    explained_variance   | -0.928        |
+|    learning_rate        | 1e-05         |
+|    loss                 | -0.0058       |
+|    n_updates            | 80            |
+|    policy_gradient_loss | -0.000641     |
+|    std                  | 1             |
+|    value_loss           | 0.00745       |
+-------------------------------------------
+Traceback (most recent call last):
+  File "c:\Projects\Regimeaware1\lumina\main.py", line 206, in <module>
+    model.learn(total_timesteps=TRAINING_TIMESTEPS, callback=checkpoint_callback)
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\ppo\ppo.py", line 311, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 324, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\on_policy_algorithm.py", line 218, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\vec_env\base_vec_env.py", line 222, in step
+    return self.step_wait()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\vec_env\dummy_vec_env.py", line 59, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(  # type: ignore[assignment]
+                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Projects\Regimeaware1\lumina\main.py", line 151, in step
+    obs = self._get_observation()
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Projects\Regimeaware1\lumina\main.py", line 160, in _get_observation
+    ma = recent_returns.mean(axis=0).fillna(0).values  # Replace NaN with 0
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 7442, in fillna
+    result = self._constructor_from_mgr(new_data, axes=new_data.axes)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\series.py", line 666, in _constructor_from_mgr
+    ser._name = None  # caller is responsible for setting real name
+    ^^^^^^^^^
+  File "C:\Users\auzto\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 6301, in __setattr__
+    @final
+
+KeyboardInterrupt
